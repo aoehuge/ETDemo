@@ -32,5 +32,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Module\Http\" />
+    <Folder Include="Module\Demo\Movement\" />
+    <Folder Include="Module\Demo\CardBusiness\" />
+    <Folder Include="Module\AutoChess\" />
+    <Folder Include="Module\AutoChess\" />
+    <Folder Include="AutoChess\" />
+    <Folder Include="AutoChess\System\" />
+    <Folder Include="AutoChess\Factroy\" />
+    <Folder Include="AutoChess\Handler\" />
   </ItemGroup>
 </Project>

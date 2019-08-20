@@ -2,7 +2,7 @@
 using ETModel;
 namespace ETHotfix
 {
-    public static class GamePlayerFactory
+    public static class ChessPlayerFactory
     {
         public static async Task<ChessPlayer> Create(MatchPlayerInfo matchPlayerInfo, GameRoom gameRoom)
         {

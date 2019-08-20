@@ -1,10 +1,13 @@
-﻿using System;
-namespace Model.AutoChess.Entity
+﻿namespace ETModel
 {
-    public class MatchPlayerInfo
+    public partial class MatchPlayerInfo : Entity
     {
-        public MatchPlayerInfo()
+        public override void Dispose()
         {
+            SeatIndex = 0;
+            User = null;
+            SessionActorId = 0;
+            base.Dispose();
         }
     }
 }
