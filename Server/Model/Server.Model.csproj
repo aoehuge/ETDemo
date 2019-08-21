@@ -87,6 +87,21 @@
     <None Remove="Libs\**" />
     <None Remove="graph.bytes" />
     <Compile Remove="Module\Demo\Card\CardTradeComponent.cs" />
+    <Compile Include="..\..\Unity\Assets\Hotfix\Module\Message\CommonModelMessage.cs">
+      <Link>Module\Message\CommonModelMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\Hotfix\Module\Message\CommonModelOpcode.cs">
+      <Link>Module\Message\CommonModelOpcode.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\Hotfix\Module\Message\IUserMessage.cs">
+      <Link>Module\Message\IUserMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\Hotfix\Module\Message\MatchMessage.cs">
+      <Link>Module\Message\MatchMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\Hotfix\Module\Message\MatchOpcode.cs">
+      <Link>Module\Message\MatchOpcode.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\Unity\Assets\Model\Base\DoubleMap.cs" Link="Base\DoubleMap.cs" />

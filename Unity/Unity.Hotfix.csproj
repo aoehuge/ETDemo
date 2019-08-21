@@ -114,11 +114,15 @@
     <Compile Include="Assets\Hotfix\Module\Demo\UI\UIOperation\Component\UIOperationComponent.cs" />
     <Compile Include="Assets\Hotfix\Module\Demo\UI\UIOperation\System\UIOperationSystem.cs" />
     <Compile Include="Assets\Hotfix\Module\Message\AMHandler.cs" />
+    <Compile Include="Assets\Hotfix\Module\Message\CommonModelMessage.cs" />
+    <Compile Include="Assets\Hotfix\Module\Message\CommonModelOpcode.cs" />
     <Compile Include="Assets\Hotfix\Module\Message\HotfixMessage.cs" />
     <Compile Include="Assets\Hotfix\Module\Message\HotfixMessageDispatcher.cs" />
     <Compile Include="Assets\Hotfix\Module\Message\HotfixOpcode.cs" />
     <Compile Include="Assets\Hotfix\Module\Message\IMessage.cs" />
     <Compile Include="Assets\Hotfix\Module\Message\IMHandler.cs" />
+    <Compile Include="Assets\Hotfix\Module\Message\MatchMessage.cs" />
+    <Compile Include="Assets\Hotfix\Module\Message\MatchOpcode.cs" />
     <Compile Include="Assets\Hotfix\Module\Message\MessageDispatcherComponent.cs" />
     <Compile Include="Assets\Hotfix\Module\Message\MessagePool.cs" />
     <Compile Include="Assets\Hotfix\Module\Message\OpcodeTypeComponent.cs" />
@@ -744,6 +748,7 @@
     <Reference Include="Boo.Lang">
       <HintPath>/Users/zt-2017838/Documents/Unit/2018.4.4f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
+    <Compile Include="Assets\Hotfix\Module\Message\IUserMessage.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Model.csproj">

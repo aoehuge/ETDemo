@@ -1,4 +1,6 @@
-﻿namespace ETModel
+﻿using ETModel;
+
+namespace ETHotfix
 {
     public partial class MatchPlayerInfo : Entity
     {

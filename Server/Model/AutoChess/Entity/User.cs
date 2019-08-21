@@ -4,7 +4,7 @@ using MongoDB.Bson.Serialization.Attributes;
 namespace ETHotfix
 {
     [BsonIgnoreExtraElements]
-    public class User : Entity
+    public partial class User : Entity
     {
 
     }
