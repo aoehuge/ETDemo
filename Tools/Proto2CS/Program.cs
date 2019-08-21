@@ -29,8 +29,8 @@ namespace ETTools
             }
             ProcessHelper.Run(protoc, "--csharp_out=\"../Unity/Assets/Model/Module/Message/\" --proto_path=\"./\" OuterMessage.proto", waitExit: true);
             ProcessHelper.Run(protoc, "--csharp_out=\"../Unity/Assets/Hotfix/Module/Message/\" --proto_path=\"./\" HotfixMessage.proto", waitExit: true);
-            ProcessHelper.Run(protoc, "--csharp_out=\"../Unity/Assets/Model/Module/Message/\" --proto_path=\"./\" CommonModelMessage.proto", waitExit: true);
-            ProcessHelper.Run(protoc, "--csharp_out=\"../Unity/Assets/Model/Module/Message/\" --proto_path=\"./\" MatchMessage.proto", waitExit: true);
+            ProcessHelper.Run(protoc, "--csharp_out=\"../Unity/Assets/Hotfix/Module/Message/\" --proto_path=\"./\" CommonModelMessage.proto", waitExit: true);
+            ProcessHelper.Run(protoc, "--csharp_out=\"../Unity/Assets/Hotfix/Module/Message/\" --proto_path=\"./\" MatchMessage.proto", waitExit: true);
 
             // InnerMessage.proto生成cs代码
             InnerProto2CS.Proto2CS(); 
@@ -39,8 +39,8 @@ namespace ETTools
 
             Proto2CS("ETHotfix", "HotfixMessage.proto", hotfixMessagePath, "HotfixOpcode", 10000);
 
-            Proto2CS("ETModel", "CommonModelMessage.proto", clientMessagePath, "CommonModelOpcode", 11000);
-            Proto2CS("ETModel", "MatchMessage.proto", clientMessagePath, "MatchOpcode", 19000);
+            Proto2CS("ETHotfix", "CommonModelMessage.proto", hotfixMessagePath, "CommonModelOpcode", 11000);
+            Proto2CS("ETHotfix", "MatchMessage.proto", hotfixMessagePath, "MatchOpcode", 19000);
 
 
             Console.WriteLine("proto2cs succeed!");
