@@ -102,6 +102,12 @@
     <Compile Include="..\..\Unity\Assets\Hotfix\Module\Message\MatchOpcode.cs">
       <Link>Module\Message\MatchOpcode.cs</Link>
     </Compile>
+    <Compile Include="..\..\Unity\Assets\Hotfix\Module\Message\ChessMessage.cs">
+      <Link>Module\Message\ChessMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\Hotfix\Module\Message\ChessOpcode.cs">
+      <Link>Module\Message\ChessOpcode.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\Unity\Assets\Model\Base\DoubleMap.cs" Link="Base\DoubleMap.cs" />
@@ -349,6 +355,9 @@
     <Folder Include="AutoChess\Component\" />
     <Folder Include="AutoChess\Entity\" />
     <Folder Include="AutoChess\System\" />
+    <Folder Include="AutoChess\Tools\" />
+    <Folder Include="AutoChess\Enum\" />
+    <Folder Include="AutoChess\Network\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Pathfinding.Ionic.Zip.Reduced, Version=1.9.1.9000, Culture=neutral, PublicKeyToken=null">

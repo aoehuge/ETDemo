@@ -1,0 +1,34 @@
+syntax = "proto3";
+import "CommonModelMessage.proto";
+package ETHotfix;
+
+//开始游戏通知
+message Actor_StartGame // IActorMessage
+{
+    int32 RpcId = 90;
+    int64 ActorId = 94;
+    int32 RoomId = 3;//房间ID
+    repeated ChessPlayer PlayerInfos = 1;//开始游戏所有玩家信息
+    repeated int32 RoomConfigs = 2;//房间配置信息
+}
+
+//玩家信息
+message ChessPlayer
+{
+    int32 SeatIndex = 1; //座位索引
+    User user = 2;//用户信息
+    repeated int32 PlayCards = 3;//出牌信息
+    repeated ChessOperateInfo OperateInfos = 4;//操作信息
+    int32 NowHP = 5;//当前血量
+    repeated int32 HandCards = 6;//手里的牌
+    int32 WinCount = 7;//赢的次数
+    int32 DefeatCount = 8;//输的次数
+}
+
+//玩家操作信息
+message ChessOperateInfo
+{
+    int32 Card = 1;//操作的卡片
+    int32 OperationType = 2;//
+    int32 PlayCardIndex = 3;//玩家z索引
+}

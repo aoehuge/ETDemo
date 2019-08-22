@@ -31,6 +31,7 @@ namespace ETTools
             ProcessHelper.Run(protoc, "--csharp_out=\"../Unity/Assets/Hotfix/Module/Message/\" --proto_path=\"./\" HotfixMessage.proto", waitExit: true);
             ProcessHelper.Run(protoc, "--csharp_out=\"../Unity/Assets/Hotfix/Module/Message/\" --proto_path=\"./\" CommonModelMessage.proto", waitExit: true);
             ProcessHelper.Run(protoc, "--csharp_out=\"../Unity/Assets/Hotfix/Module/Message/\" --proto_path=\"./\" MatchMessage.proto", waitExit: true);
+            ProcessHelper.Run(protoc, "--csharp_out=\"../Unity/Assets/Hotfix/Module/Message/\" --proto_path=\"./\" ChessMessage.proto", waitExit: true);
 
             // InnerMessage.proto生成cs代码
             InnerProto2CS.Proto2CS(); 
@@ -41,7 +42,7 @@ namespace ETTools
 
             Proto2CS("ETHotfix", "CommonModelMessage.proto", hotfixMessagePath, "CommonModelOpcode", 11000);
             Proto2CS("ETHotfix", "MatchMessage.proto", hotfixMessagePath, "MatchOpcode", 19000);
-
+            Proto2CS("ETHotfix", "ChessMessage.proto", hotfixMessagePath, "ChessOpcode", 12000);
 
             Console.WriteLine("proto2cs succeed!");
         }
@@ -150,6 +151,9 @@ namespace ETTools
             msgOpcode.Clear();
             Proto2CS("ETModel", "InnerMessage.proto", serverMessagePath, "InnerOpcode", 1000);
             GenerateOpcode("ETModel", "InnerOpcode", serverMessagePath);
+
+            Proto2CS("ETModel", "GatherInnerMessage.proto", serverMessagePath, "GatherInnerOpcode", 2000);
+            GenerateOpcode("ETModel", "GatherInnerOpcode", serverMessagePath);
         }
 
         public static void Proto2CS(string ns, string protoName, string outputPath, string opcodeClassName, int startOpcode)

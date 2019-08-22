@@ -15,6 +15,7 @@ namespace ETModel
     {
         public bool IsInGame = false;
         public int RoomId { get; set; }
+        public MatchRoomConfig RoomConfig;
 
         public long GameServeRoomActorId { get; set; }
         public Dictionary<int, MatchPlayerInfo> PlayerInfoDic = new Dictionary<int, MatchPlayerInfo>();

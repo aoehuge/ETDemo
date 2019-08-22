@@ -14,7 +14,10 @@ namespace ETModel
 		DB = 1 << 4,
 		Location = 1 << 5,
 		Map = 1 << 6,
-        GameRoom = 1<<7,
+        User = 1 << 7,
+        Lobby = 1 << 8,
+        Match = 1 << 9,
+        GameRoom = 1<<10,
 
 		BenchmarkWebsocketServer = 1 << 26,
 		BenchmarkWebsocketClient = 1 << 27,

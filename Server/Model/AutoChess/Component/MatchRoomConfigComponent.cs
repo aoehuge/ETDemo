@@ -16,9 +16,19 @@ namespace ETModel
         private readonly Dictionary<long, MatchRoomConfig> mMatchIdInRoomConfigs = new Dictionary<long, MatchRoomConfig>();//匹配房间Id对应匹配配置
         private DBProxyComponent dBProxyCom;
 
-        public async void Awake()
+        public void Awake()
         {
 
+        }
+
+        public MatchRoomConfig GetMatchRoomInfo(long RoomId)
+        {
+            MatchRoomConfig matchRoomConfig;
+            if (mMatchIdInRoomConfigs.TryGetValue(RoomId, out matchRoomConfig))
+            {
+
+            }
+            return matchRoomConfig;
         }
     }
 }

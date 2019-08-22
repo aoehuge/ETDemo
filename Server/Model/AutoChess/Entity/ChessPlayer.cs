@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using ETHotfix;
-namespace ETModel
+using ETModel;
+namespace ETHotfix
 {
     [ObjectSystem]
     public class ChessPlayerAwakeSystem : AwakeSystem<ChessPlayer>
@@ -10,11 +10,12 @@ namespace ETModel
             self.Awake();
         }
     }
-    public class ChessPlayer : Entity
+    public partial class ChessPlayer : Entity
     {
         public GameRoom GameRoom;
         public readonly Dictionary<int, Card> CardsDic = new Dictionary<int, Card>();
-        
+        public bool IsAI; //是否是机器人
+
         public void Awake()
         {
            

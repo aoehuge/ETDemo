@@ -40,5 +40,6 @@
     <Folder Include="AutoChess\System\" />
     <Folder Include="AutoChess\Factroy\" />
     <Folder Include="AutoChess\Handler\" />
+    <Folder Include="AutoChess\Help\" />
   </ItemGroup>
 </Project>
