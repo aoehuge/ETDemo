@@ -20,7 +20,7 @@ namespace ETHotfix
             {
                 player.Value.StartGame(actor_StartGame);
             }
-            gameRoom
+            
             foreach (var player in actor_StartGame.PlayerInfos)
             {
                 ChessPlayerFactory.DisposeSerializePlayer(player);

@@ -1,30 +1,8 @@
 using ETHotfix;
+using ETModel;
 using System.Collections.Generic;
 namespace ETModel
 {
-//验证服向网关服请求秘钥
-	[Message(GatherInnerOpcode.R2G_GetLoginKey)]
-	public partial class R2G_GetLoginKey: IRequest
-	{
-		public int RpcId { get; set; }
-
-		public long UserId { get; set; }
-
-	}
-
-	[Message(GatherInnerOpcode.G2R_GetLoginKey)]
-	public partial class G2R_GetLoginKey: IResponse
-	{
-		public int RpcId { get; set; }
-
-		public int Error { get; set; }
-
-		public string Message { get; set; }
-
-		public long Key { get; set; }
-
-	}
-
 //验证服向用户服验证用户
 	[Message(GatherInnerOpcode.R2U_VerifyUser)]
 	public partial class R2U_VerifyUser: IRequest

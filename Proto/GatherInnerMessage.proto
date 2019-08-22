@@ -1,17 +1,3 @@
-//验证服向网关服请求秘钥
-message R2G_GetLoginKey // IRequest
-{
-	int32 RpcId = 90;
-	int64 UserId = 1;
-}
-
-message G2R_GetLoginKey // IResponse
-{
-	int32 RpcId = 90;
-	int32 Error = 91;
-	string Message = 92;
-	int64 Key = 1;
-}
 
 //验证服向用户服验证用户
 message R2U_VerifyUser // IRequest
